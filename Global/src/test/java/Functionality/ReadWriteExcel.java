@@ -10,7 +10,7 @@ public class ReadWriteExcel extends Driver {
 	static int i=40;
 	public void Read() throws Exception
 	{
-		i=i+1;
+		i+=1;
 		String url =data.getData("Input", i);
 		String Pacode = data.PAcode("Input", i);
 		sheetData.add(Pacode);
