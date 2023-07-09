@@ -22,6 +22,7 @@ public class gd extends Driver {
 	public void gdfunction() throws Throwable {
 		try {
 			system .out.println("working");
+
 			Utility popup = new Utility();
 			popup.popupclose();
 			Actions a = new Actions(driver);
@@ -47,6 +48,7 @@ public class gd extends Driver {
 					}
 
 				} catch (Exception e) {
+						system .out.println("not working");
 					boolean Zscaler = driver
 							.findElement(By.xpath(
 									"//*[contains(@src,'https://login.zscalertwo.net:443/__zsig/DNSP0qr2RtJj6')]"))
