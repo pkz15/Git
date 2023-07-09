@@ -21,6 +21,7 @@ public class gd extends Driver {
 
 	public void gdfunction() throws Throwable {
 		try {
+			system .out.println("working");
 			Utility popup = new Utility();
 			popup.popupclose();
 			Actions a = new Actions(driver);
@@ -167,15 +168,15 @@ public class gd extends Driver {
 		// ]"));
 		try {
 			WebElement Copyright = wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(
-					"//span[contains(@jsselect,'heading')]|//span[contains(normalize-space(),'Copyright © 2023 FordDirect')]|//p[contains(@class,'sb-header  ')]|//p[contains(normalize-space(),'Copyright © 2023 - FordDirect')]|//span[contains(@class,'credit')]|//span[contains(@class,'copyrightYear') ] |//span[contains(normalize-space(),'© 2023 FordDirect. All rights reserved.')]|//div[contains(@class,'sc-pjumZ sc-pJVnX sc-pkURi gihEOX')] |//span[contains(normalize-space(),'Copyright © 2023 FordDirect. All Rights Reserved.')]"))));
+					"//span[contains(@jsselect,'heading')]|//span[contains(normalize-space(),'Copyright Â© 2023 FordDirect')]|//p[contains(@class,'sb-header  ')]|//p[contains(normalize-space(),'Copyright Â© 2023 - FordDirect')]|//span[contains(@class,'credit')]|//span[contains(@class,'copyrightYear') ] |//span[contains(normalize-space(),'Â© 2023 FordDirect. All rights reserved.')]|//div[contains(@class,'sc-pjumZ sc-pJVnX sc-pkURi gihEOX')] |//span[contains(normalize-space(),'Copyright Â© 2023 FordDirect. All Rights Reserved.')]"))));
 			// WebElement Copyright = driver.findElement(By.xpath(
 			// "//span[contains(@jsselect,'heading')]|//span[contains(normalize-space(),'Copyright
-			// © 2023 FordDirect')]|//p[contains(@class,'sb-header
-			// ')]|//p[contains(normalize-space(),'Copyright © 2023 -
+			// Â© 2023 FordDirect')]|//p[contains(@class,'sb-header
+			// ')]|//p[contains(normalize-space(),'Copyright Â© 2023 -
 			// FordDirect')]|//span[contains(@class,'credit')]|//span[contains(@class,'copyrightYear')
-			// ] |//span[contains(normalize-space(),'© 2023 FordDirect. All rights
+			// ] |//span[contains(normalize-space(),'Â© 2023 FordDirect. All rights
 			// reserved.')]|//div[contains(@class,'sc-pjumZ sc-pJVnX sc-pkURi gihEOX')]
-			// |//span[contains(normalize-space(),'Copyright © 2023 FordDirect. All Rights
+			// |//span[contains(normalize-space(),'Copyright Â© 2023 FordDirect. All Rights
 			// Reserved.')]"));
 			Thread.sleep(2000);
 			if (Copyright.isDisplayed() || Copyright.isEnabled()) {
